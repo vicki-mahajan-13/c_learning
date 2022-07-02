@@ -2,9 +2,10 @@
 int main()
 {
     char a;
+    int b;
     printf("Enter a character");
-    scanf("%c",&a);
-    a=a-32;
-    printf("%c",a);
+    scanf("%d",&a);
+    printf("%d",a);
     return 0;
 }
+
