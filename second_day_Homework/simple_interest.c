@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 int main()
 {
     float a,principle,rate,time;
@@ -9,8 +8,8 @@ int main()
     scanf("%f",&rate);
     printf("Enter the time");
     scanf("%f",&time);
-    a=principle * pow((1+rate/100),time);
-    printf("Compound interest is %f",a);
+    a=principle*rate*time/100;
+    printf("Simple interest is %f",a);
     return 0;
 }
 
