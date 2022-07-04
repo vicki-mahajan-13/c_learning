@@ -1,13 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int a,b,c;
-    printf("Enter the number");
-    scanf("%d",&a);
-    printf("Enter the power");
-    scanf("%d",&b),
-    c=pow((a),b);
-    printf("%d",c);
+    float a,b;
+    printf("Enter radius of circle");
+    scanf("%f",&a);
+    b=3.14*(pow((a),2));
+    printf("Area of circle is %f",b);
     return 0;
 }
 
