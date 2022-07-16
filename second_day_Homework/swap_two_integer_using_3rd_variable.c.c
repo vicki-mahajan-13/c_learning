@@ -1,11 +1,20 @@
-#include  <stdio.h>
-int main()
+void swap()
 {
-    int a=2,b=3,c;
+    int a,b,c;
+    printf("Enter number for a : ");
+    scanf("%d",&a);
+    printf("Enter number for b : ");
+    scanf("%d",&b);
     c=a;
     a=b;
     b=c;
-    printf("a=%d\nb=%d",a,b);
+    printf("a : %d\nb : %d",a,b);
+}
+
+#include <stdio.h>
+int main()
+{   
+    swap();
     return 0;
 }
 
