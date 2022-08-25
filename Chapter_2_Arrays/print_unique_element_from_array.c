@@ -2,34 +2,36 @@
 #include <stdio.h>
 int main()
 {
-    int arr1[100], n,ctr=0;
-    int i, j;
-       printf("Input the number of elements to be stored in the array: ");
-       scanf("%d",&n);
-       printf("Input %d elements in the array :\n",n);
-       for(i=0;i<n;i++)
-            {
-	      printf("element - %d : ",i);
-	      scanf("%d",&arr1[i]);
-	    }
-    printf("\nThe unique elements found in the array are: \n");
-    for(i=0; i<n; i++)
+    int a[1000],b[1000],c[1000],i,j,n,ctr=0;
+    printf("Enter number of elements to be stored in array\n");
+    scanf("%d",&n);
+    printf("Enter %d elements in the array\n",n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
     {
         ctr=0;
-        for(j=0; j<n; j++)
+        for(j=0;j<n;j++)
         {
-            if (i!=j)
+            if(a[i]==a[j])
             {
-		       if(arr1[i]==arr1[j])
-              {
-                 ctr++;
-               }
-             }
+                ctr++;
+            }
         }
-       if(ctr==0)
+        if(ctr==1)
         {
-          printf("%d ",arr1[i]);
+            printf("%d",a[i]);
+        }
+        else
+        {
+            if(ctr>1)
+            {
+                printf("%d",a[i]);
+                break;
+            }
         }
     }
-       printf("\n\n");
+    return 0;
 }
