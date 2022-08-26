@@ -2,36 +2,31 @@
 #include <stdio.h>
 int main()
 {
-    int a[1000],b[1000],c[1000],i,j,n,ctr=0;
-    printf("Enter number of elements to be stored in array\n");
-    scanf("%d",&n);
-    printf("Enter %d elements in the array\n",n);
-    for(i=0;i<n;i++)
+    int a[5],b[5],i,j,c=0;
+    printf("Enter five numbers\n");
+    for(i=0;i<5;i++)
     {
         scanf("%d",&a[i]);
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<5;i++)
     {
-        ctr=0;
-        for(j=0;j<n;j++)
+        for(j=0;j<5;j++)
         {
-            if(a[i]==a[j])
+            c=0;
+            if(b[i]!=a[j])
             {
-                ctr++;
+                c++;
+                if(c=1)
+                {
+                    b[i]=a[j];
+                    printf("%d",b[i]);
+                }
             }
         }
-        if(ctr==1)
-        {
-            printf("%d",a[i]);
-        }
-        else
-        {
-            if(ctr>1)
-            {
-                printf("%d",a[i]);
-                break;
-            }
-        }
+        break;
     }
     return 0;
-}
+}    
+
+
+
