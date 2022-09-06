@@ -1,6 +1,6 @@
 #include <stdio.h>
-int square(int *);
-int square(int *b)
+int square(int );
+int square(int b)
 {
     int i,d=1;
     if(b==1)
