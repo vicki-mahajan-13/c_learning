@@ -1,20 +1,16 @@
 #include <stdio.h>
-int square(int );
 int square(int b)
 {
-    int i,d=1;
-    if(b==1)
-    {
-        return 1;
-    }
-    else
-    {
-        for(i=1;i<b;i++)
+   long unsigned int i,d=1;
+        for(i=1;i<65;i++)
         {
             d=d+d;
+            if(i==b)
+            {
+                break;
+            }
         }
         return d;
-    }
 }
 
 int main()
